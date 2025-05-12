@@ -1,55 +1,68 @@
-<p align="center">
-<img src="https://i.imgur.com/Clzj7Xs.png" alt="osTicket logo"/>
-</p>
+# 🛠️ osTicket Installation Project
 
-<h1>osTicket - Prerequisites and Installation</h1>
-This tutorial outlines the prerequisites and installation of the open-source help desk ticketing system osTicket.<br />
+This project documents the step-by-step installation and configuration of the osTicket support ticket system in a Windows Server lab environment.
 
+## 📌 Project Overview
 
-<h2>Video Demonstration</h2>
+osTicket is an open-source helpdesk solution. This lab showcases my ability to configure and deploy an enterprise-level IT support system using Windows Server, IIS, PHP, and MySQL.
 
-- ### [YouTube: How To Install osTicket with Prerequisites](https://www.youtube.com)
+---
 
-<h2>Environments and Technologies Used</h2>
+## 🔧 Technologies Used
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
+- Windows Server 2019
+- osTicket
 - Internet Information Services (IIS)
+- MySQL / PHPMyAdmin
+- PHP
+- SMTP (Email setup)
 
-<h2>Operating Systems Used </h2>
+---
 
-- Windows 10</b> (21H2)
+## 📸 Screenshots
 
-<h2>List of Prerequisites</h2>
+> Include a few screenshots of each major step: IIS setup, osTicket install page, admin dashboard, etc.
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+---
 
-<h2>Installation Steps</h2>
+## 🧭 Installation Steps
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 1. Prerequisites
+- Enabled Windows features: IIS, CGI
+- Installed PHP 7.x
+- Installed MySQL + PHPMyAdmin
+- Downloaded osTicket from [official site](https://osticket.com/download/)
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 2. Configure IIS
+- Set up new site in IIS pointing to `osTicket` folder
+- Verified PHP handler mappings
+- Enabled necessary modules
 
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-</p>
-<p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-</p>
-<br />
+### 3. osTicket Installation
+- Accessed installation via `http://localhost/osTicket`
+- Configured database and admin credentials
+
+### 4. Post-Install Configuration
+- Renamed `config.php`
+- Deleted setup directory
+- Set permissions for attachments and logs folders
+
+---
+
+## ✅ Outcome
+
+After installation and configuration, osTicket was up and running and ready to handle support tickets efficiently.
+
+---
+
+## 📂 Related Projects
+
+- [Post-Installation Configuration](https://github.com/joshmadakorcc/post-install-config)
+- [Ticket Lifecycle Examples](https://github.com/joshmadakorcc/ticket-lifecycle)
+
+---
+
+## 📬 Contact
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?style=flat-square&logo=linkedin)](https://www.linkedin.com/in/jayden-orlandini-4555a71b6)
+
